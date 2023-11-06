@@ -4,8 +4,8 @@ require("dotenv").config();
 const port = process.env.PORT;
 
 app.get("/", (req, res) => {
-  // res.send(`ellellosw, World! - ${process.env.WORD}`);
-  res.send(`ellellosw, World!`);
+  res.send(`ellellosw, World! - ${process.env.WORD}`);
+  // res.send(`ellellosw, World!`);
 });
 
 app.listen(port, () => {
